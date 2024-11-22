@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Guess the Number Game</title>
+    <link rel="stylesheet" href="./style1.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title"><i>🎯 Guess the Number! 🎲</i></h1>
+        <p class="instructions"><b>Pick a number between 1 and 100. Can you guess it?</b></p>
+        <input type="number" id="inp" placeholder="Enter your guess">
+        <button id="submit" class="button"><b>🔍 Check</b></button>
+        <p id="msg" class="message"></p>
+        <p class="attempts"><b>Attempts:</b><span id="attempt">0</span></p> 
+        <button id="resBtn" class="button restart" style="display: none;">Restart Game 🔄</button>
+    </div>
+    <script src="./logic1.js"></script>
+</body>
+</html>

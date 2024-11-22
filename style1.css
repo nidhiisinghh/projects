@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: colorShift 8s infinite;
+}
+.container {
+    border: 1px solid #fff;
+    background-color: rgba(231, 192, 235, 0.9);
+    text-align: center;
+    width: 40%;
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    animation: popUp 1s ease-in-out;
+}
+.title {
+    font-size: 2.5rem;
+    color: #6a1b9a;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.instructions {
+    font-size: 1.2rem;
+    color: #614303;
+    margin-bottom: 20px;
+}
+input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #6a1b9a;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s;
+}
+input:focus {
+    border-color: #ff6b6b;
+    box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+}
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #6a1b9a;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover {
+    background: #ff6b6b;
+    transform: scale(1.1);
+}
+.restart {
+    display: none;
+    background: #ff9a00;
+}
+.message {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    min-height: 30px;
+    transition: 0.3s;
+}
+.attempts {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #800303;
+}
+@keyframes colorShift {
+    0% {
+        background: linear-gradient(135deg, #89f7fe, #66a6ff); 
+    }
+    25% {
+        background: linear-gradient(135deg, #66a6ff, #c3cfe2); 
+    }
+    50% {
+        background: linear-gradient(135deg, #c3cfe2, #fddb92); 
+    }
+    75% {
+        background: linear-gradient(135deg, #fddb92, #89f7fe); 
+    }
+    100% {
+        background: linear-gradient(135deg, #89f7fe, #66a6ff); 
+    }
+}
+
+@keyframes popUp {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    40% {
+        transform: scale(1.2);
+        opacity: 0.8;
+    }
+    70% {
+        transform: scale(0.95);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes subtleBounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
