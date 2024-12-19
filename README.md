@@ -17,3 +17,6 @@ This is a fun and interactive web-based game where players guess a randomly gene
 	•	HTML: For structure.
 	•	CSS: For styling and visual design.
 	•	JavaScript: For game logic and interactivity.
+
+
+hi nidhi
